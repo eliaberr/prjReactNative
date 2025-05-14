@@ -18,12 +18,11 @@ export default function App() {
 
     setNumberConvertBinary(binary);
   };
-
   const convertBinariToDecimal = () => {
     const binary = number;
     const resultNumber = parseInt(binary, 2);
     setNumberConvertBinary(resultNumber);
-    setShowTable(true)
+    setShowTable(true);
   };
 
   return (
@@ -52,7 +51,6 @@ export default function App() {
           onPress={convertDecimalToBinari}
           disabled={number.length > 2 ? true : false}
         />
-
         <Button
           title="Converter para Decimal"
           color="#841584"
@@ -119,36 +117,30 @@ const styles = StyleSheet.create({
     alignItems: "center",
     paddingTop: 100,
   },
-
   table: {
     backgroundColor: "white",
     height: 70,
     flexDirection: "colum",
     justifyContent: "space-around",
   },
-
   row: {
     flexDirection: "row",
     justifyContent: "space-around",
   },
-
   colum: {
     textAlign: "center",
     width: 25,
     border: 1,
   },
-
   text: {
     color: "white",
     fontSize: 30,
   },
-
   resultText: {
     color: "white",
     fontSize: 23,
     marginTop: 50,
   },
-
   input: {
     marginTop: 20,
     height: 40,
@@ -157,13 +149,11 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     backgroundColor: "white",
   },
-
   containerBtn: {
     grid: 1,
     gap: 50,
     marginTop: 50,
   },
-
   result: {
     marginTop: 30,
     justifyContent: "center",
